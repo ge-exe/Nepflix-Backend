@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGO_URL, {
 
 app.use(express.json()); //so that the server accepts json
 
-app.use("/api/auth", authRoute); //so we can use thet auth router
+app.use("/api/auth", authRoute); //so we can use the router
 app.use("/api/users", userRoute);
 app.use("/api/movies", movieRoute);
 app.use("/api/lists", listRoute);

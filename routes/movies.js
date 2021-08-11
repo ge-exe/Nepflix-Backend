@@ -5,7 +5,7 @@ const verify = require("../verifyToken");
 
 //CREATE
 
-router.post("/", verify, async (req, res) => {// /:id = params
+router.post("/", verify, async (req, res) => {
     if (req.user.isAdmin) {
         const newMovie = new Movie(req.body);
 
@@ -99,7 +99,7 @@ router.get("/random", verify, async (req, res) => {
 //GET ALL
 
 
-router.get("/", verify, async (req, res) => {// /:id = params
+router.get("/", verify, async (req, res) => {
     if (req.user.isAdmin) {
         
         try{

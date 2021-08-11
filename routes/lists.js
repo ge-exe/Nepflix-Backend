@@ -44,7 +44,7 @@ router.get("/", verify, async (req, res) => { //use query by ?=query postman
     const typeQuery = req.query.type;
     const genreQuery = req.query.genre;
     let list = [];
-//one of the most mindblowing shit research this further
+//one of the most mindblowing stuff research this further
     try{
         if(typeQuery){
             if(genreQuery){
